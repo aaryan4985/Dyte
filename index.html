@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyte</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudFlare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Dyte</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#service">services</a>
+            <a href="#diet">diet</a>
+            <a href="#pricing">pricing</a>
+            <a href="#reviews">review</a>
+            <a href="bmi.html">BMI</a>
+        </nav>
+        <div class="fas fa-bars" id="menu"></div>
+    </header>
+    <section class="home" id="home">
+
+    <div class="content">
+        <h3>Welcome to   the place full of healthy food.</h3>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+        </header>
+        <ul class="chatbox"></ul>
+        <div class="chat-input">
+            <textarea></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <div id="chat-icon">
+        <i class="fas fa-heartbeat"></i> <!-- Use an appropriate health-related icon -->
+    </div>
+      
+
+    </section>
+    <section class="about" id="about">
+
+        <h1 class="heading">About Us</h1>
+        <div class="row">
+            <div class="content">
+                <h3>My mission is to give you guidelien for your health.</h3>
+                <p>Welcome to our dieting website, where we are committed to guiding you on your journey to better health. Our mission is to empower you with valuable information and effective strategies for achieving your dietary goals. Whether you're looking to lose weight, improve your energy levels, or simply adopt a healthier lifestyle, we offer expert advice and practical tips tailored to your needs. Explore our resources and discover how small, sustainable changes in your diet can lead to significant improvements in your overall well-being. Let's embark on this journey together towards a healthier, happier you!
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="image">
+                <img  src="images/about.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="services" id="service">
+
+        <h1 class="heading">Our Services</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="icon">
+                    <img src="images/service-1.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Arranging nutitional plans</h3>
+                    <div class="line">
+                        <p>Planning</p>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Assessment: health goals.</li>
+                        <li><i class="fas fa-check"></i>Customization: diet plans.</li>
+                        <li><i class="fas fa-check"></i>Balance: diverse nutrients.</li>
+                        <li><i class="fas fa-check"></i>Monitoring: Track progress</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/service-2.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Arranging a excercise plan</h3>
+                    <div class="line">
+                        <p>hi</p>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Do Presonalized Goal Setting</li>
+                        <li><i class="fas fa-check"></i>Include Balanced Meals diet</li>
+                        <li><i class="fas fa-check"></i>Get Regular Exercises plans</li>
+                        <li><i class="fas fa-check"></i>Know Hydration Importance</li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="box">
+                <div class="icon">
+                    <img src="images/service-3.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Arranging a lifestyle plan</h3>
+                    <div class="line">
+                        <p>heya</p>
+                    </div>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Nutritious Foods: balanced meals.</li>
+                        <li><i class="fas fa-check"></i>Daily Exercise: Have active lifestyle.</li>
+                        <li><i class="fas fa-check"></i>Quality Sleep: Ensure restful nights.</li>
+                        <li><i class="fas fa-check"></i>Stress Management: relaxation techniques.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="diet" id="diet">
+        <h1 class="heading">Diet Plan</h1>
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">
+                <img src="images/diet-1.png" alt="">
+                <h3>all</h3>
+            </li>
+            <li class="buttons" data-filter="breakfast">
+                <img src="images/diet-2.png" alt="">
+                <h3>breakfast</h3>
+            </li>
+            <li class="buttons" data-filter="lunch">
+                <img src="images/diet-3.png" alt="">
+                <h3>Lunch</h3>
+            </li>
+            <li class="buttons" data-filter="Dinner">
+                <img src="images/diet-4.png" alt="">
+                <h3>Dinner</h3>
+            </li>
+        </ul>
+        <div class="image-container">
+            <div class="box lunch">
+                <div class="image">
+                    <img src="images/diet_blog1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="images/diet_blog2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="images/diet_blog3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box breakfast">
+                <div class="image">
+                    <img src="images/diet_blog4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing eli t. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box lunch">
+                <div class="image">
+                    <img src="images/diet_blog5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box dinner">
+                <div class="image">
+                    <img src="images/diet_blog6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box Dinner">
+                <div class="image">
+                    <img src="images/diet_blog7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box Dinner">
+                <div class="image">
+                    <img src="images/diet_blog8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <a href="#" class="link">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="icon">
+                        <a href="#"><i class="fas fa-clock"></i>5 March 2024</a> 
+                        <a href="#"><i class="fas fa-user"></i>by admin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <h1 class="heading">
+            pricing plan
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <h3 class="title">basic</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">30</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Nutrition Plan</li>
+                    <li><i class="fas fa-check"></i>Training Plan</li>
+                    <li><i class="fas fa-check"></i>Body Measurment</li>
+                </ul>
+                <p>30 days consulation</p>
+                <p>3 personal meetings</p>
+                <p>$20 access to additional materials</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box active">
+                <h3 class="title">standard</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">70</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Nutrition Plan</li>
+                    <li><i class="fas fa-check"></i>Training Plan</li>
+                    <li><i class="fas fa-check"></i>Body Measurment</li>
+                </ul>
+                <p>60 days consulation</p>
+                <p>10 personal meetings</p>
+                <p>free access to additional materials</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <h3 class="title">premium</h3>
+                <div class="price">
+                    <span class="currency">$</span>
+                    <span class="amount">90</span>
+                    <span class="duration">/year</span>
+                </div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Nutrition Plan</li>
+                    <li><i class="fas fa-check"></i>Training Plan</li>
+                    <li><i class="fas fa-check"></i>Body Measurment</li>
+                </ul>
+                <p>90 days consulation</p>
+                <p>15 personal meetings</p>
+                <p>free access to additional materials</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <h1 class="heading">Client's review</h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate beatae, velit accusamus quam dolores inventore ullam sapiente vel molestiae provident, dolor similique molestias cum quaerat. Adipisci reprehenderit quam molestias.</p>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Aaryan</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate beatae, velit accusamus quam dolores inventore ullam sapiente vel molestiae provident, dolor similique molestias cum quaerat. Adipisci reprehenderit quam molestias.</p>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Aaryan</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate beatae, velit accusamus quam dolores inventore ullam sapiente vel molestiae provident, dolor similique molestias cum quaerat. Adipisci reprehenderit quam molestias.</p>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Aaryan</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate beatae, velit accusamus quam dolores inventore ullam sapiente vel molestiae provident, dolor similique molestias cum quaerat. Adipisci reprehenderit quam molestias.</p>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Aaryan</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate beatae, velit accusamus quam dolores inventore ullam sapiente vel molestiae provident, dolor similique molestias cum quaerat. Adipisci reprehenderit quam molestias.</p>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Aaryan</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptate beatae, velit accusamus quam dolores inventore ullam sapiente vel molestiae provident, dolor similique molestias cum quaerat. Adipisci reprehenderit quam molestias.</p>
+                    <div class="user">
+                        <img src="images/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>Aaryan</h3>
+                            <span>client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="content">
+            <h1 class="heading">Subscribe Now! </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odit iste recusandae porro ipsa blanditiis quo similique impedit dolorem hic, velit exercitationem magni nemo illo esse unde dignissimos amet praesentium?</p>
+            <form action="">
+                <input type="email" placeholder="Enter your email" class="email">
+                <input type="submit" value ="subscribe" class="btn">
+            </form>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#about"><i class="fas fa-arrow-right"></i> about</a>
+                <a href="#services"><i class="fas fa-arrow-right"></i> services</a>
+                <a href="#diet"><i class="fas fa-arrow-right"></i> diet</a>
+                <a href="#blog"><i class="fas fa-arrow-right"></i> blog</a>
+                <a href="#reviews"><i class="fas fa-arrow-right"></i> reviews</a>
+            </div>
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> my account</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> my orders</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> ask questions</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> my wishlist</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> terms of use</a>
+                <a href="#"><i class="fas fa-arrow-right"></i> privacy policy</a>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#home"><i class="fas fa-phone"></i>+1234567890</a>
+                <a href="#about"><i class="fas fa-phone"></i>+1234567890</a>
+                <a href="#services"><i class="fas fa-envelope"></i> dyte@gmail.com</a>
+                <a href="#diet"><i class="fas fa-map"></i> india</a>
+            </div>
+            
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="dyte.js"></script>
+</body>
+</html>
