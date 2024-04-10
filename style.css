@@ -228,11 +228,23 @@ section{
     text-align: center;
 }
 
+.home .content .healthy{
+    
+    -webkit-text-stroke: 0.4px rgb(255, 204, 0);
+    color: var(--white);
+
+}
+
 .home .content h3{
     font-size: 5rem;
     text-transform: uppercase;
     color: var(--white);
     padding-bottom: 3.5rem;
+}
+
+.home .content .healthy:hover{
+    color: var(--main-color);
+    cursor: pointer;
 }
 
 .about .row{
@@ -599,7 +611,9 @@ section{
   }
 
 .newsletter{
-    background: url(images/newsletter.jpg)  no-repeat center / cover ;
+    background: url(images/newsletter.jpg)  no-repeat center / cover ;  
+    margin-bottom: 100px;
+    z-index: 22;
 }
 
 .newsletter .content{
@@ -639,34 +653,91 @@ section{
 .newsletter .content form .btn:hover{
     background: var(--main-color);
 }
-
-.footer .box-container{
-    display: grid;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Styles for the footer section */
+  .footer {
+    /* position: relative;  */
+    /* min-height: 500px; Set minimum height to cover the viewport */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    color: #333; /* Set text color */
+    justify-content: center;
+    align-items: center;
+    margin-top: -322px;
+    
+  }
+  
+  /* Styles for the box-container (grid layout for footer content) */
+  .footer .box-container {
+    /* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
-}
-
-.footer .box-container .box h3{
+    padding: 20px;
+    z-index: 1; Ensure content is above animation */
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  /* Styles for heading (h3) within each box */
+  .footer .box-container .box h3 {
     font-size: 2rem;
     padding: 1.5rem 0;
-    color: var(--main-color);
-}
-
-.footer .box-container .box a{
+    color: var(--main-color); /* Use your custom color variable */
+  }
+  
+  /* Styles for links (a) within each box */
+  .footer .box-container .box a {
     display: block;
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--black); /* Use your custom color variable */
     padding: 1rem 0;
-}
+  }
+  
+  /* Styles for icon (i) within links */
+  .footer .box-container .box a i {
+    color: var(--main-color); /* Use your custom color variable */
+    padding-right: 0.5rem;
 
-.footer .box-container .box a i{
-    color: var(--main-color);
-    padding-right: .5rem;
-}
-
-.footer .box-container .box a:hover i{
+  }
+  
+  /* Hover styles for icon within links */
+  .footer .box-container .box a:hover i {
     padding-right: 2rem;
+  }
+
+  .footer .box-container .box {
+    margin: 130px;
+    margin-top: 200px;
+  }
+  
+/* Styles for the animation container */
+/* Styles for the animation container */
+.footer .animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
 }
+
+
+
+#ani{
+    width: 100%;
+    height: auto;
+    position: absolute;
+}  
+  
+
 
 @media(max-width:991px){
     html{
