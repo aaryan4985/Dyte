@@ -2,7 +2,7 @@
 
 :root {
     --main-color: rgb(255, 204, 0); 
-    --primary: rgb(255, 255, 226); 
+    --primary: rgb(253, 253, 182); 
     --black: rgb(20, 20, 20);
     --white: rgb(255, 255, 255);
     --bg: rgb(242, 242, 242);   
@@ -17,8 +17,10 @@
   margin: 0;
 }
 
+
+
 body {
-  font-family: system-ui;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .backboxP
@@ -42,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:var(--main-color);
+  background-color:var(--primary);
 }
 
 .brand, .nav-links
@@ -56,18 +58,23 @@ body {
   margin-right: 1rem;
 }
 
-.brand{
-  margin-left:.4rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 620; 
+
+
+.nav-bar .brand .dyte{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--main-color);
+    text-decoration: none;
+    margin-left: 4rem;
+    font-family: poppins;
 }
 
 .brand:hover{
-  text-decoration: underline;
   cursor:pointer;
 }
 
 .headline{
+  color: var(--main-color);
   margin: 30px;
   text-align: center;
   font-size: 43px;
@@ -84,7 +91,8 @@ body {
 {
   height: .4rem;
   width:  8.4rem;
-  background-color: var(--black);
+  background-color: var(--main-color);
+  border-radius: 10px;
 }
 
 .hover-color-headlineP
@@ -142,7 +150,7 @@ body {
 }
 
 .footer {
-  background-color: var(--main-color);
+  background-color: var(--primary);
   height: 4.8rem;
   width: auto;
   margin-top: 3rem;
@@ -160,17 +168,7 @@ body {
   padding: 0 1rem;
 }
 
-.footer-ul-1,
-.footer-ul-2 {
-  list-style-type: none;
-  display: flex;
-}
 
-.footer-ul-1 li,
-.footer-ul-2 li {
-  font-size: 1.6rem;
-  margin-right: 1rem;
-}
 
 .image:hover{
   transform: scale(1.2);
