@@ -357,22 +357,26 @@ border: 2px solid red;
   color: #d41111; 
 }
 
-.go-back{
-    margin-top: 600px;
-    margin-right: 20px;
+.go-back {
+  text-align: center;
+  margin-top: 20px;
 }
 
-.go-back .btn{
-    border-radius: 20px;
-    box-shadow: #393c76 -1px 2px 2px 1px;
-    border: none;
-
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--black);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.go-back .btn:hover{
-    cursor:pointer;
-    margin-bottom: 10px;
-    transition: smooth;
+.btn:hover {
+  background-color: var(--black);
+  color: var(--main-color);
 }
 
   

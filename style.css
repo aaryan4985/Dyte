@@ -613,7 +613,7 @@ section{
 .newsletter{
     background: url(images/newsletter.jpg)  no-repeat center / cover ;  
     margin-bottom: 100px;
-    z-index: 22;
+    z-index: 100;
 }
 
 .newsletter .content{

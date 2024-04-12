@@ -45,7 +45,7 @@ const sendMessage = async () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'Bearer YOUR_API_KEY' // Replace YOUR_API_KEY with your actual API key
+          'Authorization': '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' // Replace YOUR_API_KEY with your actual API key
         },
         body: JSON.stringify({
           model: 'text-davinci-003',
@@ -108,13 +108,14 @@ $(document).ready(function() {
     var filter = $(this).attr('data-filter');
 
     if (filter == 'all') {
-      $('.diet.box').show(400);
+      $('.diet .box').show(400); // Show all boxes if 'all' is selected
     } else {
-      $('.diet.box').not('.' + filter).hide(200);
-      $('.diet.box').filter('.' + filter).show(400);
+      $('.diet .box').hide().filter('.' + filter).show(400);
+      // Hide all boxes, then show only the ones that match the filter
     }
   });
 });
+
 
 var swiper = new Swiper('.review-slider', {
   loop: true,
