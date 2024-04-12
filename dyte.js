@@ -45,7 +45,7 @@ const sendMessage = async () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'your API key here' // Replace YOUR_API_KEY with your actual API key
+          'Authorization': 'YOUR_API_KEY' // Replace YOUR_API_KEY with your actual API key
         },
         body: JSON.stringify({
           model: 'text-davinci-003',
