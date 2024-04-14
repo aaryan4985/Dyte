@@ -231,7 +231,7 @@ section{
 .home .content .healthy{
     
     -webkit-text-stroke: 0.4px rgb(255, 204, 0);
-    color: var(--white);
+    color: var(--main-color)
 
 }
 
@@ -243,7 +243,7 @@ section{
 }
 
 .home .content .healthy:hover{
-    color: var(--main-color);
+    color: var(--white);
     cursor: pointer;
 }
 
